@@ -5,7 +5,9 @@
     text-decoration: none;
     font-family: 'Poppins';
 }
-
+body{
+    overflow-x: hidden;
+}
 body::-webkit-scrollbar {
     display: none;
 }
@@ -15,13 +17,44 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fadeIn 1s;
+    animation: fadeTop 1s;
 }
 
-@keyframes fadeIn {
+@keyframes fadeTop {
     0% {
         opacity: 0;
         transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeRight {
+    0%{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
     }
     100%{
         opacity: 1;
@@ -185,7 +218,7 @@ footer .end-footer p{
     bottom: -15px;
 }
 
-article img {
+.low-card {
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -206,6 +239,7 @@ article img {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    animation: fadeLeft 1s ease-in-out;
 }
 
 .container::after{
@@ -233,6 +267,7 @@ article img {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    animation: fadeRight 1s ease-in-out;
 }
 
 .container2::after{
@@ -247,3 +282,63 @@ article img {
 .container2 p {
     line-height: 1.4;
 }
+
+.card{
+    position: relative;
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 400px;
+    min-height: 400px;
+    top: -50px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    animation: fadeBottom 1s ease-in-out;
+}
+
+.card h2{
+    margin-bottom: 10px;
+}
+.card p {
+    padding-top: 20px;
+    line-height: 1.4;
+}
+
+.card::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.high-card {
+    width: 350px;
+    height: 450px;
+    object-fit: contain;
+    border-radius: 50%;
+    float: left;
+    shape-outside: margin-box;
+    margin-left: -200px;
+}
+.deco-none{
+    text-decoration: none;
+    color: black;
+}
+.container:hover{
+    transform: scale(1.02);
+    transition: transform 0.4s ease-in-out;
+}
+.container2:hover{
+    transform: scale(1.02);
+    transition: transform 0.4s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.02);
+    transition: transform 0.4s ease-in-out;
+}
+#surl{
+    font-size: 12px;
+    text-decoration: underline;
+    font: italic;
+}
+
