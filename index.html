@@ -7,13 +7,14 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <a href="index.html" class="alwaysHere">KozoFy</a>
-
+        
+            <!-- NAVBAR -->
         <nav>
-            <a href="index.html">Home</a>
-            <a href="#">Download</a>
-            <a href="#">About Us</a>
-            <a href="#">Project</a>
+            <a href="index.html">Page d'accueil</a>
+            <a href="#">Téléchargment</a>
+            <a href="">Nos offres</a>
+            <a href="">En savoir plus</a>
+            <a href="#">Se connecter</a>
         </nav>
         <button type="button" aria-label="Toggle curtain navigation" class="nav-toggler">
             <span class="line l1"></span>
@@ -21,51 +22,66 @@
             <span class="line l3"></span>
         </button>
 
-        <section class="home">
-            <h1>Écoutez <span>votre musique</span> où <span>vous</span> voulez <span>quand</span> vous voulez</h1>
-        </section>
-        <a href="" class="deco-none">
+        <div class="scrollbar"></div>
+        <div class="clickScrollbar"></div>
+
+        <div class="contenu">
+            
+            <!-- Titre + anim on pop -->
+            <section class="home">
+                <h1>Écoutez <span>votre musique</span> où <span>vous</span> voulez <span>quand</span> vous voulez</h1>
+                <h2 class="main-h2">Kozofy la <span>nouvelle</span> ère <span>auditive</span></h2>
+            </section>
+
+                <!-- Cartes main page -->
             <article class="container">
-                <img src="./images/audio.jpg" alt="image de casque audio" class="low-card">
-                <h2>Écoutez votre musique n'import où</h2>
-                <p>Avec KozoFy vous pouvez écouter votre musique n'importe où et surtout quand vous voulez.
-                KozoFy ne nécéssite aucune connection et est donc utilisable hors-ligne !</p>
+                <a href="" class="deco-none">
+                    <img src="./images/audio.jpg" alt="image de casque audio" class="low-card">
+                    <h2>Écoutez votre musique n'import où</h2>
+                    <p>Avec KozoFy vous pouvez écouter votre musique n'importe où et surtout quand vous voulez.
+                    KozoFy ne nécéssite aucune connection et est donc utilisable hors-ligne !</p>
+                </a>
             </article>
-        </a>
-        <article class="container2">
-            <a href="" class="deco-none">
-                <img src="./images/info bulle.jpg" alt="image de casque audio" class="low-card">
-                <h2>Informations complémentaires</h2>
-                <p>À savoir aussi que KozoFy a son code en OpenSource ! Tout le monde peut donc consuler son code et donc sa gestion des musics. Vous pouvez d'ailleurs nous faire des retours pour nous donner de nouveaux morceaux à ajouter !</p>
-            </a>
-        </article>
+            <article class="container2">
+                <a href="project.html" class="deco-none">
+                    <img src="./images/info bulle.jpg" alt="image de casque audio" class="low-card">
+                    <h2>Informations complémentaires</h2>
+                    <p>À savoir aussi que KozoFy a son code en OpenSource ! Tout le monde peut donc consuler son code et donc sa gestion des musics. Vous pouvez d'ailleurs nous faire des retours pour nous donner de nouveaux morceaux à ajouter !</p>
+                </a>
+            </article>
+            <article class="card">
+                <a href="" class="deco-none">
+                    <img src="./images/phone.jpg" alt="image icon de téléchargement" class="high-card">
+                    <h2>Téléchargement de notre logiciel</h2>
+                    <p>Le logiciel est actuellement en bêta, le téléchargement est pour le moment impossible, nous vous tiendrons au courant de la suite. Pour toutes informations sur la sortie du logiciel n'hésitez pas à consulter la page <a href="" class="deco-none" id="surl"> <strong>Information Importantes</strong> </a>, cette page contient toutes les dernières nouveautés et mises à jour <br><br> <span id="surl">L'équipe Kozofy vous remercie.</span></p>
+                </a>
+            </article>
 
-        <article class="card">
-            <a href="" class="deco-none">
-                <img src="./images/phone.jpg" alt="image icon de téléchargement" class="high-card">
-                <h2>Téléchargement de notre logiciel</h2>
-                <p>Le logiciel est actuellement en bêta, le téléchargement est pour le moment impossible, nous vous tiendrons au courant de la suite. Pour toutes informations sur la sortie du logiciel n'hésitez pas à consulter la page <a href="" class="deco-none" id="surl">Information Importantes</a>, cette page contient toutes les dernières nouveautés et mises à jour <br><br> <span id="surl">L'équipe Kozofy vous remercie.</span></p>
-            </a>
-        </article>
+            <a href=""><button type="button" class="btn">En savoir plus sur nos offres<i class="fa-solid fa-arrow-right" id="arrow"></i></button></a>
+
+                    <!-- FOOTER -->
+            <footer>
+                <div class="footer-box">
+                    <div class="left-content">
+                        <p>KozoFy tous droits réservés</p>
+                        <p>Pour toutes informations complémentaires n'hésitez pas à nous contacter : <br><a href="mailto:KozoFyCorporation@gmail.com" class="kozomail">KozoFyCorporation@gmail.com</a></p>
+                    </div>
+                    <div class="right-content">
+                        <p>Pour nous suivre sur nos différents rédeaux : </p>
+                        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Reiiko2b/KozoFy-V2.git" target="_blank"><i class="fa-brands fa-github" id="git"></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div class="end-footer">
+                        <p>Merci de la fidélitée que vous nous accordez.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
 
 
-        <footer>
-            <div class="footer-box">
-                <div class="left-content">
-                    <p>KozoFy tous droits réservés</p>
-                    <p>Pour toutes informations complémentaires n'hésitez pas à nous contacter : <br><a href="mailto:KozoFyCorporation@gmail.com" class="kozomail">KozoFyCorporation@gmail.com</a></p>
-                </div>
-                <div class="right-content">
-                    <p>Pour nous suivre sur nos différents rédeaux : </p>
-                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://github.com/Reiiko2b/KozoFy-V2.git" target="_blank"><i class="fa-brands fa-github" id="git"></i></a>
-                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                </div>
-                <div class="end-footer">
-                    <p>Merci de la fidélitée que vous nous accordez.</p>
-                </div>
-            </div>
-        </footer>
+
+                <!-- Import JS-->
         <script src="https://kit.fontawesome.com/d4fe1ba3b7.js"></script>
         <script src="script.js"></script>
     </body>
